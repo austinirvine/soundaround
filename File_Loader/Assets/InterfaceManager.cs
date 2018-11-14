@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class InterfaceManager : MonoBehaviour {
 
-	//#region Private Variables & Properties
+	#region Private Variables & Properties
 
-	//#endregion
+	#endregion
 
-	//#region Public Variables & Properties
+	#region Public Variables & Properties
 	public GameObject SubAudioMenu;
 	public bool SubAudioMenuOpen = false;
-	//#endregion
+	#endregion
 
-	//#region Public Custom Button Calls
+	#region Public Custom Button Calls
 	void Awake(){
 
 	}
@@ -68,5 +68,5 @@ public class InterfaceManager : MonoBehaviour {
 		RetrieveAudioList();
 		return;
 	}
-	//#endregion
+	#endregion
 }
