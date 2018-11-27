@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Singleton that gives global control to calling buttons
+   NOTED: It is a gross singleton, avoid these when possible,
+   but it will work for this simple task of button management.
+*/
 public class InterfaceManager : MonoBehaviour {
 
 	#region Private Variables & Properties

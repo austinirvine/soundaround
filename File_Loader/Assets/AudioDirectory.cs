@@ -22,7 +22,6 @@ public class AudioDirectory : MonoBehaviour {
 	void Start() {
 		string audio_path = "/Users/austinirvine/Documents/soundaround/File_Loader/Assets/AudioFiles";
 		RefreshAudioDisplay(audio_path);
-		
 	}
 
 	void RefreshAudioDisplay(string audio_path) {
