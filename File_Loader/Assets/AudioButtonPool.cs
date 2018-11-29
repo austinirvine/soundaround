@@ -13,13 +13,16 @@ public class AudioButtonPool : MonoBehaviour {
 		if (inactiveInstances.Count > 0) {
 			spawned_game_object = inactiveInstances.Pop();
 		} else {
-			spawned_game_object = (GameObject)GameObject.Instantiate(prefab);
+			/* Adding the this.transform fixed the size of the button by adding
+			   the parent...
+			 */
+			spawned_game_object = Instantiate(prefab, this.transform);
 
 			PooledObject pooled_object = spawned_game_object.AddComponent<PooledObject>();
 			pooled_object.pool = this;
 		}
 
-		spawned_game_object.transform.SetParent(null);
+		spawned_game_object.transform.SetParent(this.transform);
 		spawned_game_object.SetActive(true);
 
 		return spawned_game_object;

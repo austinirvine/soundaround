@@ -16,10 +16,10 @@ public class AudioFileButton : MonoBehaviour {
 		//button.onClick.addListener(HandleClick);
 	}
 	public void Setup(AudioFile file, AudioDirectory dir) {
-		//audio_file = file;
-		//button_text.text = audio_file.clip_name;
-		//icon_image.sprite = audio_file.icon_image;
-		//audio_dir = dir;
+		audio_file = file;
+		button_text.text = audio_file.clip_name;
+		icon_image.sprite = audio_file.icon_image;
+		audio_dir = dir;
 	}
 
 	public void HandleClick() {
