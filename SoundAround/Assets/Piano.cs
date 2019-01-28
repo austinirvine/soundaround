@@ -6,17 +6,40 @@ public class Piano : MonoBehaviour {
     const double middleC = 261.626;
     const double halfStepMultiplier = 1.0595;
     float[] keyValues = new float[25];
-    public SinewaveGenerator sine;
-    public AudioSource source;
+    public GameObject[] tones = new GameObject[25];
 	// Use this for initialization
 	void Start () {
-		
-	}
+		for(int i = 0; i <= 24; i++)
+        {
+            stopFrequency(tones[i]);
+            ((SinewaveGenerator)tones[i].GetComponent("SinewaveGenerator")).enabled = false;
+            ((SinewaveGenerator)tones[i].GetComponent("SinewaveGenerator")).createAudioSource();
 
-    void playFrequency(double freq)
+        }
+        //for (int i = 0; i <= 24; i++)
+        //{
+        //    stopFrequency(tones[i]);
+        //    ((SinewaveGenerator)tones[i].GetComponent("SinewaveGenerator")).enabled = false;
+        //}
+    }
+
+    void playFrequency(double freq, GameObject tone)
     {
+        Debug.Log("Starting source " + tone);
+        SinewaveGenerator sine = (SinewaveGenerator)tone.GetComponent("SinewaveGenerator");
         sine.frequency1 = (float)freq;
+        sine.enabled = true;
+        AudioSource source = (AudioSource)tone.GetComponent("AudioSource");
         source.Play();
+        // sine.togglePlaying();
+    }
+
+    void stopFrequency(GameObject tone)
+    {
+        SinewaveGenerator sine = (SinewaveGenerator)tone.GetComponent("SinewaveGenerator");
+        Debug.Log("Stopping source " + tone);
+        sine.enabled = false;
+       // sine.togglePlaying();
     }
 	
 	// Update is called once per frame
@@ -34,12 +57,19 @@ public class Piano : MonoBehaviour {
             if (keyPressed)
             {
                 Debug.Log(aboveMiddleC);
-                playFrequency(freq);
+                playFrequency(freq, tones[i-48]);
             }
-            if (keyReleased)
+            else if (keyReleased)
             {
-                source.Stop();
+                stopFrequency(tones[i - 48]);
             }
+            //else
+            //{
+            //   if (MidiJack.MidiMaster.GetKey(MidiJack.MidiChannel.All, i) == 0)
+            //    {
+            //        stopFrequency(tones[i - 48]);
+            //    }
+            //}
 
         }
 	}

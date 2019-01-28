@@ -17,10 +17,10 @@ public class SinewaveGenerator : MonoBehaviour
 
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 0; //force 2D sound
-        audioSource.Stop(); //avoids audiosource from starting to play automatically
+        //audioSource = gameObject.AddComponent<AudioSource>();
+        //audioSource.playOnAwake = false;
+        //audioSource.spatialBlend = 0; //force 2D sound
+        //audioSource.Stop(); //avoids audiosource from starting to play automatically
     }
 
     void Update()
@@ -29,6 +29,15 @@ public class SinewaveGenerator : MonoBehaviour
         {
             togglePlaying();
         }
+    }
+
+    public void createAudioSource()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 0; //force 2D sound
+        audioSource.Stop(); //avoids audiosource from starting to play automatically
+
     }
 
     public void togglePlaying()
@@ -46,6 +55,7 @@ public class SinewaveGenerator : MonoBehaviour
 
     void OnAudioFilterRead(float[] data, int channels)
     {
+        Debug.Log("filter called");
         for (int i = 0; i < data.Length; i += channels)
         {
             data[i] = CreateSine(timeIndex, frequency1, sampleRate);
