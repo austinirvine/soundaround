@@ -1,0 +1,87 @@
+Gamme;Short;Index;Main;Count;Do;Do#;Re;Re#;Mi;Fa;Fa#;Sol;Sol#;La;La#;Si
+Major melodic;Major;1;X;7;1;;2;;3;4;;5;;6;;7
+Major harmonic;Major Har;3;X;7;1;;2;;3;4;;5;6m;;;7
+Minor natural;Minor Nat;2;X;7;1;;2;3m;;4;;5;6m;;7m;
+Minor melodic;Minor Mel;2;X;7;1;;2;3m;;4;;5;;6;;7
+Minor harmonic;Minor Har;4;X;7;1;;2;3m;;4;;5;6m;;;7
+Pentatonic Major;Penta M;5;x;5;1;;2;;3;;;5;;6;;
+Pentatonic Minor;Penta m;6;x;5;1;;;3m;;4;;5;;;7m;
+Chromatic;Chromatic;7;X;12;1;2m;2;3m;3;4;4+;5;6m;6;7m;7
+Blues;Blues;8;X;7;1;;;2+;;3+;4+;5;;;6+;7
+Enigmatic 1;Enigmatic 1;9;X;7;1;2m;;;3;;4+;;5+;;6+;7
+Gitane;Gitane;10;X;7;1;2m;;;3;4;;5;;6;7m;
+Oriental (first form);Oriental 1;11;X;7;1;2m;;;3;4;5ø;;6m;;7m;
+Bebop Major;Bebop M;12;X;8;1;;2;;3;4;;5;6m;6;;7
+Aeolien b5;Aeolien b5;13;;7;1;;2;3m;;4;5ø;;6m;;7m;
+Arabic;Arabe;14;;7;1;;2;;3;4;5ø;;6m;;7m;
+Augmented;increasede;15;;6;1;;;3m;3;;;5;6m;;;7
+Bahar;Bahar;16;;6;1;;2;3m;;4;;5;;;7m;
+Balinaise;Balinaise;17;;5;1;2m;;3m;;;;5;6m;;;
+Bartock;Bartock;18;;7;1;;2;;3;;4+;5;;6;7m;
+Bebop dominante;Bebop dom;19;;8;1;;2;;3;4;;5;;6;7m;7
+Aeolien;Aeolien;20;;7;1;;2;3m;;4;;5;6m;;7m;
+Bebop minor;Bebop m;21;;8;1;;2;3m;3;4;;5;;6;7m;
+Bitonal Major chromatique;Bitonal M;22;;6;1;;;3m;3;;5ø;5;;;;7
+Bitonal minor chromatique;Bitonal m;23;;6;1;;2;3m;;;5ø;5;;;;7
+Blues decreased (first form);Blues 1 dim ;24;;8;1;2m;;3m;3;;5ø;5;;6;7m;
+Blues decreased (second form);Blues 2 dim;25;;6;1;;;3m;3;;5ø;5;;6;;
+Major blues (first form);Blues M 1;26;;6;1;;2;3m;3;;;5;;6;;
+Minor blues (first form);Blues m 1;27;;6;1;;;3m;;4;4+;5;;;7m;
+Major blues (second form);Blues M 2;28;;6;1;;;3m;;4;4+;5;;6;;
+Minor blues (second form);Blues m 2;29;;6;1;;;3m;;;4+;;6m;6;7m;
+Chinese (first  form);chinese 1;30;;5;1;;2;;;4;;5;;6;;
+Chinese (second form);Chinese 2;31;;5;1;;;;3;;4+;5;;;;7
+Demi-decreased;Demi-dim;32;;8;1;2m;;3m;3;;5ø;5;;6;;7
+Demi-ton tons without sixte;Demi-ton no sixte;33;;7;1;2m;;3m;3;;4+;5;;;7m;
+Diminue;Dim;34;;8;1;;2;3m;;4;5ø;;6m;6;;7
+Dorien;Dorien;35;;7;1;;2;3m;;4;;5;;6;7m;
+Enigmatic 2;Enigmatic 2;36;;6;1;2m;;;3;;4+;;6m;;7m;
+Spanish (first form);Spanish 1;37;;7;1;2m;;;3;4;;5;6m;;7m;
+Spanish (second form);Spanish 2;38;;8;1;2m;;3m;3;4;5ø;;6m;;7m;
+Spanish 8 sons;Spanish 8;39;;8;1;2m;;3m;3;4;;5;6m;;7m;
+Gypsy;Gypsy;40;;7;1;2m;;;3;4;;5;6m;;;7
+Hexa-lydien;Hexa-lydien;41;;6;1;;2;;3;;4+;5;;6;;
+Hexa-melodic;Hexa-melodic;42;;6;1;;2;3m;;4;;5;;6;;
+Hexa-phrygien;Hexa-phrygien;43;;6;1;2m;;3m;;4;;5;6m;;;
+Hexa-tritonique binaire;Hexa-trit binaire;44;;6;1;;;3m;4ø;;;5;;6;7m;
+Hexa-tritonique decreased;Hexa-trit dim 1;45;;6;1;;2;3m;;;4+;;5+;6;;
+Hexa-tritonique decreased;Hexa-trit dim 2;46;;6;1;2m;;3m;;;4+;5;;6;;
+Hexa-tritonique decreased suspendu;Hexa-trit dim 3;47;;6;1;;2;3m;;;4+;5;;6;;
+Hindou;Hindou;48;;7;1;;2;;3;4;;5;6m;;7m;
+Hirajoshi;Hirajoshi;49;;5;1;;2;3m;;;;5;6m;;;
+Hongroise gitane;Hongroise gitane;50;;7;1;;2;3m;;;4+;5;6m;;7m;
+Hongroise Major;Hongroise M;51;;7;1;;;2+;3;;4+;5;;6;7m;
+Hongroise Minor;Hongroise m;52;;7;1;;2;3m;;;4+;5;6m;;;7
+Indoustane;Indoustane;53;;6;1;;;;3;4;;5;6m;;7m;
+Ionien;Ionien;54;;7;1;;2;;3;4;;5;;6;;7
+Ionien #5;Ionien 5;55;;7;1;;2;;3;4;;;5+;6;;7
+Iwato;Iwato;56;;5;1;;;;;4;4+;5;;;7m;
+Javanais;Javanais;57;;7;1;2m;;3m;;4;;5;;6;7m;
+Kokin joshi;Kokin joshi;58;;5;1;2m;;;;4;;5;;;7m;
+Kumoi;Kumoi;59;;5;1;2m;;;;4;;5;6m;;;
+Locrien;Locrien;60;;7;1;2m;;3m;;4;5ø;;6m;;7m;
+Locrien becarre 6;Locrien 6;61;;7;1;2m;;3m;;4;5ø;;;6;7m;
+Lydien;Lydien;62;;7;1;;2;;3;;4+;5;;6;;7
+Lydien #2;Lydien 2;63;;7;1;;;2+;3;;4+;5;;6;;7
+Lydien increased;Lydien aug;64;;7;1;;2;;3;;4+;;5+;6;;7
+Mixolydien;Mixolydien;65;;7;1;;2;;3;4;;5;;6;7m;
+Napolitan Major;Napolitan M;66;;7;1;2m;;3m;;4;;5;;6;;7
+Napolitan Minor;Napolitan m;67;;7;1;2m;;3m;;4;;5;6m;;;7
+Oriental (second form);Oriental 2;68;;7;1;2m;;;3;4;5ø;;6m;7ø;;
+Oriental (third form);Oriental 3;69;;7;1;;;2+;3;4;;;5+;6;;7
+Pentatonic harmonique;Penta;70;;5;1;;2;;3;;;5;6m;;;
+Pentatonic dominante;Penta dom;71;;5;1;;2;;3;;;5;;;7m;
+Pentatonic egyptian;Penta ‚gyptian;72;;5;1;;2;;;4;;5;;;7m;
+Pentatonic japanese;Pentatonic japanese;73;;5;1;;2;3m;;;;5;;6;;
+Pentatonic locrien (first form);Penta locrien 1;74;;5;1;;2;3m;;;5ø;;6m;;;
+Pentatonic locrien (second form);Penta locrien 2;75;;5;1;2m;;3m;;;5ø;;6m;;;
+Pentatonic mauritanienne;Penta mauritanienne;76;;5;1;;;;3;4;;5;;;;7
+Pentatonic pelog;Penta pelog;77;;5;1;2m;;3m;;;;5;;;7m;
+Persane (first form);Persane 1;78;;7;1;2m;;;3;4;4+;5;;;7m;
+Persane (second form);Persane 2;79;;7;1;2m;;;3;4;5ø;;6m;;;7
+Phrygien;Phrygien;80;;7;1;2m;;3m;;4;;5;6m;;7m;
+Promethee;Promethee;81;;6;1;;2;;3;;4+;;;6;7m;
+Rouman minor;Rouman m;82;;7;1;;2;3m;;;4+;5;;6;7m;
+Superlocrien bb7;Superlocrien;83;;7;1;2m;;3m;4ø;;5ø;;6m;7ø;;
+Superlocrien altered;Superlocrien alt;84;;7;1;2m;;3m;4ø;;5ø;;6m;;7m;
+Ton by ton;Ton by ton;85;;6;1;;2;;3;;4+;;6m;;7m;

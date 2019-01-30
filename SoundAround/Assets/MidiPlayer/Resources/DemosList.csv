@@ -1,0 +1,11 @@
+Title;Description;Scene Name;Script;Version
+Play Midi Music;A very simple example with only one MidiFilePlayer prefab to play Midi music. An example of integration without any scripting.;TestMidiFilePlayer;No script;Free
+Play Midi with script;How to integrate MPTK by script in your application. Use of the MPTK API with a few lines of code. Use of the MPTK API.;TestMidiFilePlayerScripting;TestMidiFilePlayerScripting.cs;Free
+Multi Midi Player;Four MidiFilePlayer prefabs are defined on a scene with the camera moving on each to experiment the "Playing on distance" function.;TestMidiFilePlayerMulti;No MPTK script;Free
+Simple Midi Stream Music;How to generate music without any Midi files with a few lines of code.;TestMidiStream;TestMidiStream.cs;Free
+Catch Music;Midi is read from a MidiFilePlayer but playing music is delayed in time. Could become a game!;CatchMusic;MusicView.cs;Free
+Infinity Music;Music is generated with some algorithms. Could become a more complex application to generate music.;InfinityMusic;InfinityMusic.cs;Free
+Midi Play List;Demonstration of the prefab MidiListPlayer able to play a list of Midi files;TestMidiPlayList;No script;Pro
+Write Midi File;Four methods to create and write a Midi file with MPTK. Contains also a light music sequencer.;TestMidiWriter;TestMidiWriter.cs;Pro
+Play External Midi;Select Midi file from your desktop or from a Web site and play;TestExternalMidiPlay;TestExternalMidiPlay.cs;Pro
+

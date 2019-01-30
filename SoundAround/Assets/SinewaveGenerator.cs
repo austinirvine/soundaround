@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 public class SinewaveGenerator : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class SinewaveGenerator : MonoBehaviour
 
     public float sampleRate = 44100;
     public float waveLengthInSeconds = 2.0f;
+
+    public AudioMixerGroup masterAudioGroup;
+    public AudioMixerGroup effectAudioGroup;
 
     AudioSource audioSource;
     int timeIndex = 0;
@@ -36,6 +40,7 @@ public class SinewaveGenerator : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
         audioSource.spatialBlend = 0; //force 2D sound
+        audioSource.outputAudioMixerGroup = masterAudioGroup;
         audioSource.Stop(); //avoids audiosource from starting to play automatically
 
     }
