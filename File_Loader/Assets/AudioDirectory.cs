@@ -1,8 +1,11 @@
-﻿using System.Collections;
+﻿using System.IO;
+using System.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
+//using System.FileInfo;
+//using System.FileSystemInfo;
 
 [System.Serializable]
 public class AudioFile {
@@ -37,20 +40,21 @@ public class AudioDirectory : MonoBehaviour {
 		}
 	}
 	void AssociateAudio(string audio_path) {
-		DirectoryInfo dir = new DirectoryInfo(audio_path);
-		FileInfo[] file_info = dir.GetFiles("*.*");
-
+		//DirectoryInfo dir = new DirectoryInfo(audio_path);
+		List<FileInfo> file_info = new List<FileInfo>();
+		List<string> ext = new List<string>{".mp3", ".ogg", ".wma"};
+		var file_items = Directory.GetFiles(audio_path,"*.*",SearchOption.AllDirectories)
+			.Where(s => ext.Contains(Path.GetExtension(s)));
+		foreach (string file_item in file_items) {
+			Debug.Log("ALL OF IT: " + file_item);
+			FileInfo specific_file = new FileInfo(file_item);
+			file_info.Add(specific_file);
+		}
 		foreach (FileInfo f in file_info) {
 			Debug.Log(f.Name);
 			AudioFile new_file = new AudioFile();
 			new_file.clip_name = f.Name;
 			audio_files.Add(new_file);
-			//audio_files.Add(new_file);
-			//GameObject new_button = audioPool.GetObject();
-			//new_button.transform.SetParent(content_panel);
-
-			//AudioFileButton audio_button = new_button.GetComponent<AudioFileButton>();
-            //audio_button.Setup(f, this);
 		}
 	}
 
@@ -61,7 +65,7 @@ public class AudioDirectory : MonoBehaviour {
 			new_button.transform.SetParent(content_panel);
 
 			AudioFileButton audio_button = new_button.GetComponent<AudioFileButton>();
-            audio_button.Setup(file, this);
+      audio_button.Setup(file, this);
 		}
 	}
 }
